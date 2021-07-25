@@ -10,7 +10,7 @@ const NewGoal = props => {
 
         const newGoal = {
             id: Math.random().toString(),
-            text: ""
+            text: enteredText
         }
 
         setEnteredText('');
