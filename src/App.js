@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="course-goals">
       <h2>Course Goals</h2>
-      <GoalList />
       <NewGoal />
+      <GoalList goals={courseGoals} />
     </div>
   );
 }
