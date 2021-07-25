@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './NewGoal.css';
 
 const NewGoal = props => {
+    const [enteredText, setEnteredText] = useState('');
 
     const addCourseHandler = e => {
         e.preventDefault();
@@ -12,12 +13,14 @@ const NewGoal = props => {
             text: ""
         }
 
+        setEnteredText('');
+
         props.onAddGoal(newGoal);
     }
 
     return (
         <form className="" onSubmit={addCourseHandler}>
-            <input type="text" />
+            <input type="text" onChange={enteredText} />
             <input type="submit" value="Add Goal" />
         </form>
     )
