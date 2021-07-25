@@ -11,6 +11,8 @@ const NewGoal = props => {
             id: Math.random().toString(),
             text: ""
         }
+
+        props.onAddGoal(newGoal);
     }
 
     return (
