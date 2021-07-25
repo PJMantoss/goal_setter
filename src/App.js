@@ -6,8 +6,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="">
-      
+    <div className="course-goals">
+      <h2>Course Goals</h2>
+      <GoalList />
+      <NewGoal />
     </div>
   );
 }
