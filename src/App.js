@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="course-goals">
       <h2>Course Goals</h2>
-      
+      <NewGoal />
       <GoalList goals={courseGoals} />
     </div>
   );
