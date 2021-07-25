@@ -9,3 +9,5 @@ const GoalList = props => {
         </ul>
     )
 }
+
+export default GoalList;
