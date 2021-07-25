@@ -20,7 +20,7 @@ const NewGoal = props => {
 
     return (
         <form className="" onSubmit={addCourseHandler}>
-            <input type="text" onChange={enteredText} />
+            <input type="text" value={enteredText} />
             <input type="submit" value="Add Goal" />
         </form>
     )
